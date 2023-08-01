@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 declare module '*.scss' {
   interface IClassNames {
     [className: string]: string;

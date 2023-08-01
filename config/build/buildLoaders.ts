@@ -1,6 +1,6 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
-import {BuildOptions} from './types/config';
+import { BuildOptions } from './types/config';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
   const babelLoader = {
@@ -11,7 +11,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
       options: {
         presets: ['@babel/preset-env'],
         plugins: [
-          ['i18next-extract', {locales: ['ru', 'en'], keyAsDefaultValue: true}],
+          ['i18next-extract', { locales: ['ru', 'en'], keyAsDefaultValue: true }],
         ],
       },
     },
