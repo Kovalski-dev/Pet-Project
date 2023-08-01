@@ -1,5 +1,5 @@
 export function someTest(arg: number): string {
-  console.log("Project init");
+  console.log('Project init');
 
-  return "";
+  return '';
 }
