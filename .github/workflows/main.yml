@@ -17,13 +17,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: install modules by CI
+      - name: Install modules by CI
         run: npm ci
-      - name: linting typescript
+      - name: Linting TypeScript
         run: npm run lint:ts
-      - name: linting css
+      - name: Linting CSS
         run: npm run lint:scss
-      - name: unit testing
+      - name: Unit testing
         run: npm run test:unit
-      - name: build production project
+      - name: Build production
         run: npm run build:prod
