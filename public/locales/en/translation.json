@@ -7,5 +7,7 @@
   "Обновить страницу": "Reload page",
   "Что-то пошло не так": "Something went wrong...",
   "Язык сокращённый": "En",
-  "Войти": "Sign In"
+  "Войти": "Sign In",
+  "Введите username": "Enter your username",
+  "Введите пароль": "Enter your password"
 }
