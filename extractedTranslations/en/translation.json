@@ -2,10 +2,13 @@
   "Введите username": "Enter your username",
   "Введите пароль": "Enter your password",
   "Войти": "Sign In",
+  "Вы ввели неверный логин или пароль": "Incorrect username or password",
+  "Выйти": "Quit",
   "Главная страница": "Main page",
   "О сайте": "About us",
   "Обновить страницу": "Reload page",
   "Страница не найдена": "Page is not found",
+  "Форма авторизации": "Authorization form",
   "Что-то пошло не так": "Something went wrong...",
   "Язык": "English",
   "Язык сокращённый": "Язык сокращённый"

@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import Modal from 'shared/ui/Modal/Modal';
 import cls from './LoginModal.module.scss';
-import LoginForm from '../LoginForm/LoginForm';
+import { LoginForm } from '../LoginForm/LoginForm';
 
 interface LoginModalProps {
   className?: string;
@@ -17,5 +17,3 @@ export const LoginModal = (props: LoginModalProps) => {
     </Modal>
   );
 };
-
-export default LoginModal;
