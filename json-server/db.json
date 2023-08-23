@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": {"name": "typicode"}
+  "profile": {
+    "first": "Nikita",
+    "lastname": "Koval",
+    "age": 25,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Taganrog",
+    "username": "admin",
+    "avatar": null
+  }
 }

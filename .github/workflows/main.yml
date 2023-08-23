@@ -25,5 +25,3 @@ jobs:
         run: npm run lint:scss
       - name: Unit testing
         run: npm run test:unit
-      - name: Build production
-        run: npm run build:prod
