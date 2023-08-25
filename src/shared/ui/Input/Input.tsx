@@ -4,13 +4,14 @@ import {
 } from 'react';
 import cls from './Input.module.scss';
 
-type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
+type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'readOnly'>
 
-interface InputProps extends HTMLInputProps{
+interface InputProps extends HTMLInputProps {
   className?: string;
-  value?: string;
+  value?: string | number;
   onChange?: (value: string) => void;
   autofocus?: boolean;
+  readonly?: boolean;
 }
 
 export const Input = memo((props: InputProps) => {
@@ -21,6 +22,7 @@ export const Input = memo((props: InputProps) => {
     type = 'text',
     autofocus,
     placeholder,
+    readonly,
     ...otherProps
   } = props;
 
@@ -61,6 +63,7 @@ export const Input = memo((props: InputProps) => {
         onChange={onChangeHandler}
         onFocus={onFocus}
         onBlur={onBlur}
+        readOnly={readonly}
         className={cls.input}
         {...otherProps}
       />
